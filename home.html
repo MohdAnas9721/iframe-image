@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: aliceblue;
+      font-family: 'Times New Roman', Times, serif;
+      text-decoration: none;
+    }
+
+    body{
+      width: 1000px;
+      min-height: 800px;
+      border: 2px solid red;
+      margin: 10px auto;
+      
+    }
+
+    .heder1{
+      height: 200px;
+      border: 2px solid skyblue;
+      padding-top: 20px;
+    }
+
+    .boled{
+      text-decoration: none;
+      font-size: larger;
+      margin-left: 50px;
+      background: transparent;
+    }
+
+    .bold{
+      font-size: 20px;
+      text-decoration: none;
+      margin-left: 50px;
+      background: transparent;
+    }
+
+    .Fullstack{
+      text-align: center;
+      margin-top: 20px;
+      background: transparent;
+    }
+
+    .allsection{
+      min-height: 350px;
+      border: 2px solid aquamarine;
+      padding: 10px;
+      overflow: hidden; /* float fix */
+    }
+
+    .port{
+      border: 2px solid navy;
+      width: 200px;
+      float: left;
+      padding: 5px;
+      background: transparent;
+    }
+
+    .dre2{
+      height: 30px;
+      padding-top: 6px;
+      border: 1px solid navy;
+      background: transparent;
+    }
+
+    .ase1{
+      border: 1px solid navy;
+      padding-left: 10px;
+      height: 40px;
+      padding-top: 10px;
+      background: transparent;
+    }
+
+    .workex{
+      border: 1px solid navy;
+      width: 300px;
+      height: 300px;
+      float: left;
+      margin-left: 10px;
+      background: transparent;
+    }
+
+    .control{
+      border: 2px solid navy;
+      height: 150px;
+      text-align: center;
+      padding-top: 10px;
+      background: transparent;
+    }
+
+    .section2{
+      border: 2px solid blue;
+      height: 150px;
+      padding-top: 10px;
+      padding-left: 10px;
+      background: transparent;
+    }
+
+    .section3{
+      border: 2px solid navy;
+      min-height: 300px;
+      margin-left: 520px;
+      padding: 10px;
+      background: transparent;
+    }
+    .section3 ul {
+  list-style: none;
+  padding-left: 0;
+}
+    .section3 li {
+  text-decoration: none;
+}
+
+    .student{
+      margin-top: 20px;
+      padding: 10px;
+      background: transparent;
+      overflow: hidden; /* float fix */
+    }
+
+    .review{
+      text-align: center;
+      margin-bottom: 15px;
+      background: transparent;
+    }
+
+    /* ✅ Review boxes */
+    .review-box{
+      border: 2px solid silver;
+      border-radius: 50px;
+      height: 100px;
+      width: 250px;
+      padding-top: 10px;
+      text-align: center;
+      float: left;
+      margin-left: 30px;
+      background: transparent;
+      overflow: hidden;
+    }
+
+    /* ✅ One line text */
+    .review-box strong,
+    .review-box em,
+    .review-box b{
+      background: transparent;
+      white-space: nowrap;
+      display: inline;
+    }
+
+    .allint{
+      clear: both;
+      text-align: center;
+      font-size: 22px;
+      padding: 20px 0;
+      background: transparent;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="allstyling">
+    <header class="heder1">
+      <nav class="navbaar">
+        <a href="#" class="boled"><strong>Mohd Anas</strong></a>
+        <a href="#" class="bold">Home</a>
+        <a href="#" class="bold">Project</a>
+        <a href="#" class="bold">Articles</a>
+        <a href="#" class="bold">Contact</a>
+      </nav>
+
+      <h2 class="Fullstack">Full stack developer</h2>
+      <p class="Fullstack">I handle all full stack programming</p>
+    </header>
+
+    <div class="allsection">
+      <div class="port">
+        <h3 class="dre2">Project</h3>
+        <p class="dre2">HTML only portfolio</p>
+        <section><p class="ase1">Calculator</p></section>
+        <section><p class="ase1">Quiz App</p></section>
+        <section><p class="ase1">Countdown Timer</p></section>
+        <section><p class="ase1" style="height: 107px;">Product Upcoming Page</p></section>
+      </div>
+
+      <div class="workex">
+        <section class="control">
+          <h3>Work experience</h3>
+          <p>Roadmap.anas</p>
+          <p>Solved all the backend project</p>
+          <a href="#">Visit my portfolio</a>
+        </section>
+
+        <section class="section2">
+          <h2>Open source work</h2>
+          <p>
+            Contributed to 50 open source projects.<br>
+            Made my own projects with 200 GitHub stars.
+          </p>
+          <a href="#">Visit my GitHub</a>
+        </section>
+      </div>
+
+      <section class="section3">
+        <h3>Education</h3>
+        <p>
+          Graduated with 7.78 out of 10 CGPA. Won academic hackathon. Organized 30 sessions.
+        </p>
+
+        <h5>Courses I took</h5>
+        <ul>
+          <li>Object Oriented Programming</li>
+          <li>Data Structure and Algorithm</li>
+          <li>Web Engineering</li>
+          <li>Artificial Intelligence</li>
+          <li>Human Computer Interaction</li>
+          <li>Database Management System</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="student">
+      <h1 class="review">Review</h1>
+
+      <!-- ✅ one line inside box (no <br>) -->
+      <section class="review-box">
+        <strong>Johan doe was a brilliant student <br>always stood out with his assignment.</strong>
+        <em> Johan deo Assistant professor</em>
+      </section>
+
+      <section class="review-box">
+        <strong>Johan doe was a brilliant student<br> always stood out with his assignment.</strong>
+        <i> Johan deo Assistant professor</i>
+      </section>
+
+      <section class="review-box">
+        <strong>Johan doe was a brilliant student <br>always stood out with his assignment.</strong>
+        <i> Johan deo Assistant professor</i>
+      </section>
+    </div>
+
+    <div class="allint">
+      <h2>All rights reserved 2025@</h2>
+    </div>
+  </div>
+</body>
+</html>
