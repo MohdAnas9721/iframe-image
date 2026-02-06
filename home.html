@@ -18,17 +18,24 @@
     body{
       width: 1000px;
       min-height: 800px;
-      border: 2px solid red;
-      margin: 10px auto;
-      
+      border: 2px solid blue;
+      border-radius: 10px;
+      margin: 10px auto;      
     }
 
     .heder1{
       height: 200px;
-      border: 2px solid skyblue;
-      padding-top: 20px;
+      border: 2px solid rgb(206, 227, 235);
+     
     }
-
+    
+    .navbaar{
+      border: 2px solid blue;
+      height: 40px;
+      width: auto;
+      padding: 8px;
+      border-radius: 5px;
+    }
     .boled{
       text-decoration: none;
       font-size: larger;
@@ -162,6 +169,11 @@
       padding: 20px 0;
       background: transparent;
     }
+    .Visiting{
+     border: 1px solid blue;
+      line-height: 80px;
+      height: 40px;
+    }
   </style>
 </head>
 
@@ -170,10 +182,10 @@
     <header class="heder1">
       <nav class="navbaar">
         <a href="#" class="boled"><strong>Mohd Anas</strong></a>
-        <a href="#" class="bold">Home</a>
-        <a href="#" class="bold">Project</a>
-        <a href="#" class="bold">Articles</a>
-        <a href="#" class="bold">Contact</a>
+        <a href="Home" class="bold">Home</a>
+        <a href="Project" class="bold">Project</a>
+        <a href="Articals" class="bold">Articles</a>
+        <a href="Contact" class="bold">Contact</a>
       </nav>
 
       <h2 class="Fullstack">Full stack developer</h2>
@@ -195,7 +207,7 @@
           <h3>Work experience</h3>
           <p>Roadmap.anas</p>
           <p>Solved all the backend project</p>
-          <a href="#">Visit my portfolio</a>
+          <a href="#" class="Visiting">Visit my portfolio</a>
         </section>
 
         <section class="section2">
@@ -204,7 +216,7 @@
             Contributed to 50 open source projects.<br>
             Made my own projects with 200 GitHub stars.
           </p>
-          <a href="#">Visit my GitHub</a>
+          <a href="#" class="isiting">Visit my GitHub</a>
         </section>
       </div>
 
