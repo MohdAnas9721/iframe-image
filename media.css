@@ -12,6 +12,7 @@ body{
            gap: 10px;
 }
 .header{
+
     grid-area: header;
     text-align: center;
    font-size: 2rem;
@@ -20,36 +21,44 @@ body{
     color:white;
     padding-top: 10px;
     width: auto;
-    border: 4px solid orangered;
     border-radius:5px 5px 0px 0px;
 }
 
+.header{
+     background-image: linear-gradient(to  right, #ff0000, rgb(81, 250, 81));
+}
 .menu {
    grid-area: menu;
+   float: left;
 }
 
 .menu ul{
      list-style-type: none;
      margin: 0;
      padding: 0;
+     
 }
 
 .menu li{
  background-color: rgb(166, 130, 244);
     color: white;
     padding: 8px;
-    margin: 5px;
+    margin: 10px;
 }
 
 .menu li:hover {
-    background-color: #0099cc;
+    background-color: white;
+    color: black;
 }
 
 .content {
     grid-area: main;
+  
 }
 .content > p {
     margin-bottom: 7px;
+     
+   
 } 
 
 .facts{
@@ -64,6 +73,7 @@ body{
     height: 100px;
     padding: 20px;
     margin-top: 10px;
+    border-radius:0px 0px 5px 5px;
 }
 .footer p:hover{
   
@@ -82,7 +92,7 @@ body{
 
 @media (min-width: 768px) {
   .header {grid-area: 1 / span 6;}
-  .menu {grid-area: 2 / span 1;}
+  .menu {grid-area: 2 / span 2;}
   .content {grid-area: 2 / span 4;}
   .facts {grid-area: 2 / span 1;}
   .footer {grid-area: 3 / span 6;}

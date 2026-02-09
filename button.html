@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form with Background Animation</title>
+  <style>
+    body{
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+      font-family: Arial, sans-serif;
+    }
+
+    /* FORM BOX */
+    .form{
+      height: 350px;
+      width: 300px;
+      border-radius: 8px;
+      padding: 20px;
+
+     
+
+      animation: bgFormChange 20s infinite linear;
+    }
+
+    /* INPUT STYLE */
+    .container input{
+      width: 90%;
+      border: none;
+      border-bottom: 2px solid black;
+      outline: none;
+      padding: 6px 4px;
+      margin-bottom: 12px;
+      background: transparent;
+      font-size: 14px;
+    }
+
+    .container h3{
+      margin: 10px 0 5px;
+      font-size: 16px;
+    }
+
+    /* BUTTON */
+    .button{
+      margin-top: 10px;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 40px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+
+      animation: colorChange 20s infinite linear;
+    }
+
+    /* FORM BACKGROUND 10 COLORS */
+    @keyframes bgFormChange {
+      0%   { background: #fde68a; }
+      10%  { background: #bfdbfe; }
+      20%  { background: #bbf7d0; }
+      30%  { background: #fecaca; }
+      40%  { background: #e9d5ff; }
+      50%  { background: #cffafe; }
+      60%  { background: #fae8ff; }
+      70%  { background: #dcfce7; }
+      80%  { background: #ffe4e6; }
+      90%  { background: #e0e7ff; }
+      100% { background: #fde68a; }
+    }
+
+    /* BUTTON 10 COLORS */
+    @keyframes colorChange {
+      0%   { background: red; }
+      10%  { background: blue; }
+      20%  { background: green; }
+      30%  { background: orange; }
+      40%  { background: purple; }
+      50%  { background: pink; }
+      60%  { background: teal; }
+      70%  { background: brown; }
+      80%  { background: black; }
+      90%  { background: gray; }
+      100% { background: red; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form">
+    <form class="container">
+      <h3>Enter your name</h3>
+      <input type="text" placeholder="Enter your name">
+
+      <h3>Enter your Email</h3>
+      <input type="email" placeholder="Enter type Email">
+
+      <h3>Enter your Password</h3>
+      <input type="password" placeholder="Enter type password">
+    </form>
+
+    <button class="button">Submit</button>
+  </div>
+</body>
+</html>
